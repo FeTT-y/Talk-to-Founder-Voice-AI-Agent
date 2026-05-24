@@ -181,15 +181,6 @@ Nine tests run against a real LLM via LiveKit Inference — they take ~50 s on a
 
 ---
 
-## What I'd do next with another week
-
-- **Multi-agent handoff to a scheduler.** When discovery converges on "let's set up a real call," hand off to a separate scheduling agent that has access to a Calendly-style booking tool. Demonstrates LiveKit's handoff primitives properly.
-- **RAG over real case studies.** Right now the KB has two short invented case studies. Vectorize a handful of longer ones and retrieve on Q&A — the demo would feel much more concrete on calls where the visitor asks "have you done something like X before?".
-- **Latency profiling page.** A `/debug` route that overlays per-turn TTFT (already in `metrics` on each `ChatMessage`) so the team can see where time is going during a call. Useful for tuning the production deployment.
-- **Founder admin view.** `/admin` page that lists past calls with transcript + captured fields and a one-click "send follow-up email" using the captured email. This is what makes "talk to founder" actually useful operationally rather than just a marketing widget.
-- **Voice cloning of the actual founder.** Cartesia supports custom voice cloning from a short sample. With a real founder's permission and sample, "Sara" becomes that founder, and the page becomes a real version of itself rather than a demo.
-
----
 
 ## Files of interest
 
