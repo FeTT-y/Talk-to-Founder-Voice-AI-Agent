@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(winget install *)",
+      "Bash(lk app *)",
+      "Bash(lk docs *)",
+      "PowerShell(pnpm exec *)"
+    ]
+  }
+}
